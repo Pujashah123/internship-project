@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactpage</title>
+    <!--Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!--Bootstrap Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!--external css link-->
+</head>
+
+<body>
+    <!--Navbar Section-->
+    <nav class="navbar navbar-expand-lg navbar-dark navcolor shadow-sm fixed-top ">
+        <div class="container">
+            <a class="navbar-brand shree-logo" href="#">SHREE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html">Product</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu dropdown1" aria-labelledby="categoryDropdown">
+                            <li><a class="dropdown-item" href="trending.html">Trending product</a></li>
+                            <li><a class="dropdown-item" href="Recently.html">Recently product</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <form class="d-flex me-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light me-2" type="submit">Search</button>
+                        <button type="button" class="btn  modal1-button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"style="background-color: white;">
+                            Login
+                        </button>
+                    </form>
+                    <li class="nav-item px-4">
+                        <!-- <a class="btn btn-light btn-login ms-3" href="login.html">Login</a> -->
+                        <!-- Button trigger modal -->
+
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-user-circle fa-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="profile1.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">change password</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!--Navbar Section Ends-->
+    <!--bckground image in contact page-->
+    <!-- <div class="container-fluid">
+        <img src="/call-for-service/image/bg_imge_contact.jpg" alt="image" height="300px" width="1500px">
+    </div> -->
+    <div class="bg-contact">
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-3 ps-3">
+                <h3 class="  mb-4">Headquarters</h3>
+                <!--icon of home-->
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-building me-3 "></i>
+                    <h6 class="txcolor">Murli-12, Birgunj
+                        Parsa, Nepal Pincode : 44300</h6>
+                </div>
+                <h3 class="mt-5  mb-4">Phone</h3>
+
+                <!--icon of phone-->
+                <div class="d-flex align-items-center">
+                    <i class=" bi bi-telephone-fill me-3"></i>
+                    <h6 class="txcolor">
+                        +977-9802587802
+                        +977-9818273903
+                    </h6>
+                </div>
+                <h3 class="mt-5 mb-4">Support</h3>
+                <div class="row">
+                    <!--icon of support-->
+                    <div class="col-2">
+                        <i class="bi bi-chat-dots"></i>
+                    </div>
+                    <div class="col">
+                        <h6 class="txcolor">
+                            info@autosoft.com.np
+                            autosoftnepal@gmail.com
+                        </h6>
+                    </div>
+                </div>
+                <h3 class="mt-5  mb-4">Follow Us</h3>
+                <div class="row">
+                    <div class="social-icons">
+                        <a href="#" class="icon linkedin"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="icon tiktok"><i class="bi bi-tiktok"></i></a>
+                        <a href="#" class="icon instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="icon facebook"><i class="bi bi-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!--contact form-->
+            <div class="col-12 col-md-9 mt-4 mt-md-5">
+                <div class="card shadow-lg">
+                    <div class="p-4 p-md-5">
+                        <h4 class="mb-4">Let's Connect</h4>
+                        <form>
+                            <div class="row g-2">
+                                <div class="col-12 col-md-6">
+                                    <input type="text" name="name" id="name" class="form-control custom-input"
+                                        placeholder="Enter First Name">
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <input type="text" name="surname" id="sur" class="form-control custom-input"
+                                        placeholder="Enter Last Name">
+                                </div>
+                            </div>
+                            <input type="email" name="email" id="email" class="form-control custom-input mt-3"
+                                placeholder="Email Address">
+                            <input type="tel" name="number" id="number" class="form-control custom-input mt-3"
+                                placeholder="Contact Number">
+                            <textarea name="message" id="message" rows="5" class="form-control custom-input mt-3"
+                                placeholder="Your Message"></textarea>
+                            <button class="btn btn-color mt-4 shadow-lg mb-2 w-100 w-md-auto"
+                                style="background-color: #ca6702; color: white;" type="submit">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h3 class="mt-5">Our Location</h3>
+                <div class="ratio ratio-16x9 map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508616!2d144.96305791531642!3d-37.81627974202147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sMelbourne%20VIC!5e0!3m2!1sen!2sau!4v1615185764481!5m2!1sen!2sau"
+                        allowfullscreen="" loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+
+                        <!-- Login Form -->
+                        <div id="loginForm">
+                            <form id="loginRealForm">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                    <small id="emailError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Enter password" required />
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#password" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="passwordError" class="text-danger"></small>
+                                </div>
+                                <button type="submit" class="btn w-100" style="background-color:#ca6702;">Login</button>
+                            </form>
+                            <p class="text-center mt-3"><a href="#" style="color:#ca6702 ;">Forgot password?</a></p>
+
+                            <div class="text-center mt-3">
+                                <p>Don't have an account?</p>
+                                <button class="btn btn-outline-secondary btn-sm" id="showSignup" style="background-color:#ca6702; color:black;">Sign Up</button>
+                            </div>
+                        </div>
+
+                        <!-- Sign Up Form -->
+                        <div id="signupForm" style="display: none;">
+                            <form id="signupRealForm">
+                                <div class="mb-3">
+                                    <label for="signupName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="signupName" placeholder="Enter full name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupEmail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="signupEmail" placeholder="Enter email" required>
+                                    <small id="signupEmailError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="signupPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="signupPassword" placeholder="Create password" required>
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#signupPassword" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="signupPasswordError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm password" required>
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#signupConfirmPassword" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="confirmPasswordError" class="text-danger"></small>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100" style="background-color:#ca6702;">Sign Up</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Already have an account?</p>
+                                <button class="btn btn-outline-primary btn-sm" id="showLogin" style="background-color:#ca6702; color: black;">Back to Login</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Logo and Navigation Links -->
+                <div class="col-md-4">
+                    <div class="footer-logo">SHREE Point of Sale</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mt-4">
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="col-md-4">
+                    <p class="newsletter-text">Get the latest call for service news.</p>
+                    <input type="email" class="subscribe-input" placeholder="Your email here">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="footer-bottom">
+                Copyright © 2024 Auto Soft Pvt. Ltd. all rights reserved
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

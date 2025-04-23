@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>School Management</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+   
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navcolor shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand shree-logo" href="#">SHREE</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu dropdownproduct" aria-labelledby="categoryDropdown"
+                           >
+                            <li><a class="dropdown-item" href="trending.html">Trending product</a></li>
+                            <li><a class="dropdown-item" href="Recently.html">Recently product</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <form class="d-flex me-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light me-2" type="submit">Search</button>
+                        <button type="button" class="btn  modal1-button" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"style="background-color: white;">
+                            Login
+                        </button>
+                    </form>
+                    <li class="nav-item px-4">
+                        <!-- <a class="btn btn-light btn-login ms-3" href="login.html">Login</a> -->
+                        <!-- Button trigger modal -->
+                       
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown">
+                            <i class="fas fa-user-circle fa-lg"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="profile1.html">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">change password</a></li>
+                            <li><a class="dropdown-item" href="#">Logout</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid mt-2 pt-5 product-background ">
+        <h1 class="text-center product">Product</h1>
+        <div class="row mt-4">
+            <h2 class="trending">Trending Added</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/ENC Noise.jpg" class="card-img-top" alt="ENC Noise">
+                        <div class="card-body">
+                            <h5 class="card-title">ENC Noise Cancellation</h5>
+                            <p class="lead">Rs199.99</p>
+                            <a href="ENC details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/girls shirt black.jpg" class="card-img-top" alt="Liquid Blush">
+                        <div class="card-body">
+                            <h5 class="card-title">Shirt black</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="black shir details .html" class="btn"
+                                style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/gitar.jpg" class="card-img-top" alt="Earbord">
+                        <div class="card-body">
+                            <h5 class="card-title">Gitar</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="gitar details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/necklace.jpg" class="card-img-top" alt="Earbord">
+                        <div class="card-body">
+                            <h5 class="card-title">necklace</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="necklace details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4 ">
+            <h2 class="Recently">Recently Added</h2>
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/ENC Noise.jpg" class="card-img-top" alt="ENC Noise">
+                        <div class="card-body">
+                            <h5 class="card-title">ENC Noise Cancellation</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="ENC details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/dal4.jpg" class="card-img-top" alt="Liquid Blush">
+                        <div class="card-body">
+                            <h5 class="card-title"> Moon Dal</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="dal details.html" class="btn"
+                                style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/earbord.jpg" class="card-img-top" alt="Earbord">
+                        <div class="card-body">
+                            <h5 class="card-title">Earbord</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="earbord details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/powerbank.jpg" class="card-img-top" alt="Earbord">
+                        <div class="card-body">
+                            <h5 class="card-title">powerbank</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="powerbank details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="row mt-4 ">
+
+            <div class="row row-cols-1 row-cols-md-4 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/cycle1.jpg" class="card-img-top" alt="ENC Noise">
+                        <div class="card-body">
+                            <h5 class="card-title">Cycle</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="cycle deatils.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/liquid blush.jpg" class="card-img-top" alt="Liquid Blush">
+                        <div class="card-body">
+                            <h5 class="card-title">Liquid Blush</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="liquid blush details.html" class="btn"
+                                style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/box2.jpg" class="card-img-top" alt="Earbord">
+                        <div class="card-body">
+                            <h5 class="card-title">Box</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="box details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/chai.jpg" class="card-img-top" alt="Earbord">
+                        <div class="card-body">
+                            <h5 class="card-title">chair</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="chair details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/rice2.jpg" class="card-img-top" alt="Earbord">
+                        <div class="card-body">
+                            <h5 class="card-title">Rice</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="rice1 details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/oil2.jpg" class="card-img-top" alt="Earbord">
+                        <div class="card-body">
+                            <h5 class="card-title">Oil</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="oil details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/dal2.jpg" class="card-img-top" alt="Earbord">
+                        <div class="card-body">
+                            <h5 class="card-title">Dal</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="moon dal details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="/image/rice3.jpg" class="card-img-top" alt="Earbord">
+                        <div class="card-body">
+                            <h5 class="card-title">Rice</h5>
+                            <p class="lead">$199.99</p>
+                            <a href="rice2 details.html" class="btn" style=" background-color: #ca6702;">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+
+                        <!-- Login Form -->
+                        <div id="loginForm">
+                            <form id="loginRealForm">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                    <small id="emailError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Enter password" required />
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#password" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="passwordError" class="text-danger"></small>
+                                </div>
+                                <button type="submit" class="btn w-100" style="background-color:#ca6702;">Login</button>
+                            </form>
+                            <p class="text-center mt-3"><a href="#" style="color:#ca6702 ;">Forgot password?</a></p>
+
+                            <div class="text-center mt-3">
+                                <p>Don't have an account?</p>
+                                <button class="btn btn-outline-secondary btn-sm" id="showSignup" style="background-color:#ca6702; color:black;">Sign Up</button>
+                            </div>
+                        </div>
+
+                        <!-- Sign Up Form -->
+                        <div id="signupForm" style="display: none;">
+                            <form id="signupRealForm">
+                                <div class="mb-3">
+                                    <label for="signupName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="signupName" placeholder="Enter full name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupEmail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="signupEmail" placeholder="Enter email" required>
+                                    <small id="signupEmailError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="signupPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="signupPassword" placeholder="Create password" required>
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#signupPassword" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="signupPasswordError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm password" required>
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#signupConfirmPassword" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="confirmPasswordError" class="text-danger"></small>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100" style="background-color:#ca6702;">Sign Up</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Already have an account?</p>
+                                <button class="btn btn-outline-primary btn-sm" id="showLogin" style="background-color:#ca6702; color: black;">Back to Login</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    </div>
+                
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Company Logo and Navigation Links -->
+                <div class="col-md-4">
+                    <div class="footer-logo">SHREE Point of Sale</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mt-4">
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Subscription -->
+                <div class="col-md-4">
+                    <p class="newsletter-text">Get the latest call for service news.</p>
+                    <input type="email" class="subscribe-input" placeholder="Your email here">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+
+            <!-- Social Media Icons -->
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright Section -->
+            <div class="footer-bottom">
+                Copyright © 2024 Auto Soft Pvt. Ltd. all rights reserved
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const showSignupBtn = document.getElementById('showSignup');
+        const showLoginBtn = document.getElementById('showLogin');
+        const loginForm = document.getElementById('loginForm');
+        const signupForm = document.getElementById('signupForm');
+        const modalTitle = document.getElementById('exampleModalLabel');
+
+        // When Sign Up button is clicked
+        showSignupBtn.addEventListener('click', () => {
+            loginForm.style.display = 'none';
+            signupForm.style.display = 'block';
+            modalTitle.innerText = 'Sign Up';
+        });
+
+        // When Back to Login is clicked
+        showLoginBtn.addEventListener('click', () => {
+            signupForm.style.display = 'none';
+            loginForm.style.display = 'block';
+            modalTitle.innerText = 'Login';
+        });
+    });
+</script>
+</html>

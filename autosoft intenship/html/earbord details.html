@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navcolor shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand shree-logo" href="#">SHREE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="product.html">Product</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="categoryDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu dropdownAbout" aria-labelledby="categoryDropdown">
+                            <li><a class="dropdown-item" href="trending.html">Trending product</a></li>
+                            <li><a class="dropdown-item" href="Recently.html">Recently product</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+
+                    <form class="d-flex me-auto">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-light me-2" type="submit">Search</button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal" style="background-color: white; color: black;">
+                            Login
+                        </button>
+                    </form>
+                    <li class="nav-item px-4"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal for Login and Signup -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+
+                        <!-- Login Form -->
+                        <div id="loginForm">
+                            <form id="loginRealForm">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                    <small id="emailError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Enter password" required />
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#password" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="passwordError" class="text-danger"></small>
+                                </div>
+                                <button type="submit" class="btn w-100" style="background-color:#ca6702;">Login</button>
+                            </form>
+                            <p class="text-center mt-3"><a href="#" style="color:#ca6702 ;">Forgot password?</a></p>
+
+                            <div class="text-center mt-3">
+                                <p>Don't have an account?</p>
+                                <button class="btn btn-outline-secondary btn-sm" id="showSignup" style="background-color:#ca6702; color:black;">Sign Up</button>
+                            </div>
+                        </div>
+
+                        <!-- Sign Up Form -->
+                        <div id="signupForm" style="display: none;">
+                            <form id="signupRealForm">
+                                <div class="mb-3">
+                                    <label for="signupName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="signupName" placeholder="Enter full name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupEmail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="signupEmail" placeholder="Enter email" required>
+                                    <small id="signupEmailError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="signupPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="signupPassword" placeholder="Create password" required>
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#signupPassword" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="signupPasswordError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm password" required>
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#signupConfirmPassword" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="confirmPasswordError" class="text-danger"></small>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100" style="background-color:#ca6702;">Sign Up</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Already have an account?</p>
+                                <button class="btn btn-outline-primary btn-sm" id="showLogin" style="background-color:#ca6702; color: black;">Back to Login</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 mt-5">
+                <img src="/image/earbord.jpg" alt="Product Image" class="product-image" style="height: 300px;width: 400px;">
+            </div>
+            <div class="col-md-6 ">
+                <h2 class="mb-3 mt-5">Product Name</h2>
+                <p class="text-muted">Earbord</p>
+                <p class="product-price">$199.99</p>
+                <p class="product-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet justo at mi hendrerit,
+                    nec tristique nunc tincidunt. Integer volutpat metus magna, at dignissim ipsum fermentum eget.
+                    Curabitur efficitur augue vel libero euismod, nec aliquet lorem scelerisque.
+                </p>
+                <button class="btn btn-success add-to-cart-btn" style="background-color: #ca6702;">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-logo">SHREE Point of Sale</div>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Products</a></li>
+                        <li><a href="#">Services</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 mt-4">
+                    <ul class="footer-links">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <p class="newsletter-text">Get the latest call for service news.</p>
+                    <input type="email" class="subscribe-input" placeholder="Your email here">
+                    <button class="subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                Copyright © 2024 Auto Soft Pvt. Ltd. all rights reserved
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
+

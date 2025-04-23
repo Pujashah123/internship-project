@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"> 
+    <script src="script.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navcolor shadow-sm">
+        <div class="container">
+            <a class="navbar-brand shree-logo" href="#">SHREE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-4">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="color: black; background-color: white;">
+                            Login
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+
+                        <!-- Login Form -->
+                        <div id="loginForm">
+                            <form id="loginRealForm">
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                    <small id="emailError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Enter password" required />
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#password" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="passwordError" class="text-danger"></small>
+                                </div>
+                                <button type="submit" class="btn w-100" style="background-color:#ca6702;">Login</button>
+                            </form>
+                            <p class="text-center mt-3"><a href="#" style="color:#ca6702 ;">Forgot password?</a></p>
+
+                            <div class="text-center mt-3">
+                                <p>Don't have an account?</p>
+                                <button class="btn btn-outline-secondary btn-sm" id="showSignup" style="background-color:#ca6702; color:black;">Sign Up</button>
+                            </div>
+                        </div>
+
+                        <!-- Sign Up Form -->
+                        <div id="signupForm" style="display: none;">
+                            <form id="signupRealForm">
+                                <div class="mb-3">
+                                    <label for="signupName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="signupName" placeholder="Enter full name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="signupEmail" class="form-label">Email address</label>
+                                    <input type="email" class="form-control" id="signupEmail" placeholder="Enter email" required>
+                                    <small id="signupEmailError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="signupPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="signupPassword" placeholder="Create password" required>
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#signupPassword" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="signupPasswordError" class="text-danger"></small>
+                                </div>
+                                <div class="mb-3 position-relative">
+                                    <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="signupConfirmPassword" placeholder="Confirm password" required>
+                                    <i class="fa-solid fa-eye toggle-password" toggle="#signupConfirmPassword" style="position:absolute; top:38px; right:15px; cursor:pointer;"></i>
+                                    <small id="confirmPasswordError" class="text-danger"></small>
+                                </div>
+                                <button type="submit" class="btn btn-success w-100" style="background-color:#ca6702;">Sign Up</button>
+                            </form>
+                            <div class="text-center mt-3">
+                                <p>Already have an account?</p>
+                                <button class="btn btn-outline-primary btn-sm" id="showLogin" style="background-color:#ca6702; color: black;">Back to Login</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

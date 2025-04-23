@@ -1,0 +1,442 @@
+.footer {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e5920e;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #8DA9C4;
+}
+
+.social-icons {
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: orange;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: darkorange;
+}
+
+.newsletter-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e5920e;
+    margin-bottom: 10px;
+}
+
+.subscribe-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8DA9C4;
+    border-radius: 5px;
+}
+
+.subscribe-btn {
+    margin-top: 8px;
+    padding: 8px 20px;
+    background-color: white;
+    border: 2px solid #8DA9C4;
+    color: #e5920e;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.subscribe-btn:hover {
+    background-color: #e5920e;
+    color: black;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    color: #ca6702;
+}
+
+.navcolor {
+    background-color: #ca6702;
+}
+
+.About {
+    color: #EEA23F;
+    font-size: 40px;
+}
+
+.shree-logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shree-logo:hover {
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.6);
+}
+
+.dropdownAbout {
+    background-color: #ca6702;
+}
+
+.Aboutbackground {
+    background-color: white;
+}
+
+.btnlogin {
+    background-color: #ca6702;
+}
+
+.bi {
+    color: #e5920e;
+    font-size: 24px;
+}
+
+.txcolor {
+    color: black;
+    text-align: start;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #0b2545;
+    border-radius: 5px;
+    font-size: 24px;
+    color: black;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.icon.linkedin:hover {
+    background-color: #ca6702;
+    color: white;
+    border-color: #0A66C2;
+}
+
+.icon.tiktok:hover {
+    background-color: #ca6702;
+    color: white;
+    border-color: #010101;
+}
+
+.icon.instagram:hover {
+    background-color: #ca6702;
+    color: white;
+    border-color: #e6683c;
+}
+
+.icon.facebook:hover {
+    background-color: #ca6702;
+    color: white;
+    border-color: #1877F2;
+}
+
+.map-container {
+    width: 100%;
+    height: 500px;
+}
+
+.custom-map {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.dropdown1 {
+    background-color: #ca6702;
+}
+
+.dropdownbutton {
+    color: black;
+    background-color: white;
+}
+
+.product,
+.trending,
+.Recently {
+    color: #EEA23F;
+    font-size: 3.6rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.product {
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.trending,
+.Recently {
+    font-weight: 90;
+}
+
+.product-background {
+ background-color: white;
+}
+
+.button1,
+.button2,
+.button3,
+.button4,
+.button5,
+.button6,
+.button7,
+.button8,
+.button9,
+.button10,
+.button11 {
+    background-color: #ca6702;
+}
+
+.btnproduct1 {
+    background-color: #ca6702;
+}
+
+.login-btn {
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #e5920e;
+    color: white;
+    border: 1px solid #e5920e;
+}
+
+.modal-login-btn {
+    background-color: #ca6702;
+    color: white;
+}
+
+.dropdownrecently {
+    background-color: #ca6702;
+}
+
+.recently {
+    color: black;
+    background-color: white;
+}
+
+.recentlybackground {
+    background-color: white;
+}
+
+.bg-contact {
+    background: url('/image/ChatGPT Image Apr 4, 2025, 08_46_35 PM.png') no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.card {
+    transition: transform 0.15s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Product Image */
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Product Price */
+.product-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Product Description */
+.product-description {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: #f1f1f1;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.footer-logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #e5920e;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    color: #8DA9C4;
+}
+
+/* Social Icons */
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    color: orange;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    color: darkorange;
+}
+
+/* Newsletter */
+.newsletter-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #e5920e;
+    margin-bottom: 10px;
+}
+
+.subscribe-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8DA9C4;
+    border-radius: 5px;
+}
+
+.subscribe-btn {
+    margin-top: 8px;
+    padding: 8px 20px;
+    background-color: white;
+    border: 2px solid #8DA9C4;
+    color: #e5920e;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.subscribe-btn:hover {
+    background-color: #e5920e;
+    color: black;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    color: #ca6702;
+}
+
+/* Navbar */
+.navcolor {
+background-color: #ca6702;
+}
+
+/* Shree Logo */
+.shree-logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 2px;
+    transition: color 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+}
+
+.shree-logo:hover {
+    color: #ffcc00;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.6);
+}
+
+/* Section Titles (Product, Trending, Recently) */
+.product, .trending, .Recently {
+    color: #EEA23F;
+    font-size: 3.6rem;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+/* Specific font-weight for trending/recently sections */
+.trending, .Recently {
+    font-weight: 90;
+}
